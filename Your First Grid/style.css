@@ -1,0 +1,42 @@
+
+
+/*primer container , segundo container   */
+.flex-container,.flex-container2 {
+    display: flex;
+    max-width: 1080px;
+    width: 90%;             /*ancho disponible*/
+    list-style-type: none;
+    margin: 0;
+    background-color: aqua;
+  }
+  .item{
+    height: 200px;
+    width: 200px; /* alto disponible */
+    line-height: 200px;
+    font-size: 20px;
+    background-color: blue;
+    color: brown;
+    text-align: center;
+    margin: 5px 5px; /*De la misma manera que con padding, podemos asignar también 2, 3 y hasta 4 valores para la propiedad.*/
+  }
+#item1{order: 3;}  /* da la orden en la quie aparece */
+#item2{order: 4;}
+#item3{order: 3;}
+#item4{order: 2;}
+#item5{order: 1;}
+#item6{order: 6;}
+/*“si como mínimo el viewport tiene N píxeles de ancho, apliquemos estas reglas”.*/
+@media (min-width: 480px){body {background: red; }}
+
+
+/*orientación (portrait o landscape) estamos diciendo: “si como
+máximo el viewport tiene N píxeles de ancho y además el dispositivo está en
+posición vertical/horizontal,*/
+/*@media (max-width: 768px) and (orientation: landscape){body {background: rgb(0, 255, 0);}}*/
+
+/*“si como máximo viewport tiene N píxeles de ancho, apliquemos estas reglas”.*/
+@media (max-width: 768px){ body { background: yellow;}}
+
+/* body {background: red;}
+@media (min-width: 460px){Tablets }
+@media (min-width: 768px){Laptop }*/
